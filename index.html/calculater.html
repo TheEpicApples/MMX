@@ -1,0 +1,263 @@
+<html> 
+   <head> 
+      <script> 
+         //function that display value 
+         function dis(val) 
+         { 
+             document.getElementById("result").value+=val 
+         } 
+           
+         //function that evaluates the digit and return result 
+         function solve() 
+         { 
+             let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y 
+         } 
+           
+         //function that clear the display 
+         function clr() 
+         { 
+             document.getElementById("result").value = "" 
+         } 
+      </script> 
+      <!-- for styling -->
+      <style> 
+         .title{ 
+         margin-bottom: 10px; 
+         text-align:center; 
+         width: 210px; 
+         color:green; 
+         border: solid black 2px; 
+         } 
+  
+         input[type="button"] 
+         { 
+         background-color:Pink; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+  
+         input[type="text"] 
+         { 
+         background-color:white; 
+         border: solid black 2px; 
+         width:100% 
+         } 
+      </style> 
+   </head> 
+   <!-- create table -->
+   <body> 
+      <div class = title >Murder Mystery X Value Calculator</div> 
+      <table border="1"> 
+         <tr> 
+            <td colspan="3"><input type="text" id="result"/></td> 
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()"/> </td> 
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			
+         </tr> 
+         <tr> 
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="runic" onclick="dis('80')"/> </td> 
+            <td><input type="button" value="Divine" onclick="dis('150')"/> </td> 
+            <td><input type="button" value="Oracle" onclick="dis('190')"/> </td> 
+            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+			 <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+			
+         </tr> 
+         <tr> 
+            <td><input type="button" value="Tempest" onclick="dis('400')"/> </td> 
+            <td><input type="button" value="GoldReaper" onclick="dis('850')"/> </td> 
+            <td><input type="button" value="DarkBlade" onclick="dis('1200')"/> </td> 
+            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+			         <td><input type="button" value="." onclick="dis('.')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="RBL" onclick="dis('1300')"/> </td> 
+            <td><input type="button" value="RBS" onclick="dis('1500')"/> </td> 
+            <td><input type="button" value="BOU" onclick="dis('2200')"/> </td> 
+            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+         </tr> 
+		  <tr> 
+            <td><input type="button" value="GOU" onclick="dis('2500')"/> </td> 
+            <td><input type="button" value="Miracle" onclick="dis('4500')"/> </td> 
+            <td><input type="button" value="Permafrost" onclick="dis('5500')"/> </td> 
+            <td><input type="button" value="Glee" onclick="dis('35')"/> </td> 
+         </tr> 
+		 <td>
+		 <input type="button" value="Cheerful" onclick="dis('35')"/> </td> 
+            <td><input type="button" value="Heartsplitter" onclick="dis('40')"/> </td> 
+            <td><input type="button" value="Passion Blaster" onclick="dis('40')"/> </td> 
+            <td><input type="button" value="Axe Of Light" onclick="dis('45')"/> </td> 
+			</tr>
+			<td>
+			<input type="button" value="Hurricane" onclick="dis('45')"/> </td> 
+            <td><input type="button" value="Hunk" onclick="dis('45')"/> </td> 
+            <td><input type="button" value="Cupids Crossbow" onclick="dis('50')"/> </td> 
+            <td><input type="button" value="Tsunmani" onclick="dis('50')"/> </td> 
+			</td>
+			 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		  <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		  <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		  <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		  <tr> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr> 
+		 
+		 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+         <tr> 
+            <td><input type="button" value="." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="" onclick=""/> </td> 
+            <td><input type="button" value="" onclick="dis('')"/> </td> 
+         </tr>
+		
+      </table> 
+   </body> 
+</html>   
